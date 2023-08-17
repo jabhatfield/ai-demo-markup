@@ -1,5 +1,6 @@
 name: opennlp-component
 title: OpenNLP
 version: 1.0
+start_page: opennlp-intro.adoc
 nav:
   - modules/ROOT/nav.adoc
