@@ -1,0 +1,5 @@
+name: opennlp-component
+title: OpenNLP
+version: 1.0
+nav:
+  - modules/ROOT/nav.adoc
