@@ -1,0 +1,2 @@
+* xref:pre-reqs.adoc[]
+* xref:intellij-setup.adoc[]
