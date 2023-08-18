@@ -4,3 +4,4 @@ version: '1.0'
 start_page: openai-intro.adoc
 nav:
   - modules/ROOT/nav.adoc
+  - modules/another-module/nav.adoc
