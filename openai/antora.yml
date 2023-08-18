@@ -1,6 +1,6 @@
 name: openai-component
 title: OpenAI
-version: 1.0
+version: '1.0'
 start_page: openai-intro.adoc
 nav:
   - modules/ROOT/nav.adoc
