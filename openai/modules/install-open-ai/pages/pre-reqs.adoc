@@ -1,1 +1,19 @@
 = Pre Requisites
+:reftext: pre reqs
+:navtitle: nav pre reqs
+
+include::partial$warning.adoc[]
+
+.First test phase
+[,js]
+----
+include::example$example.js[]
+----
+
+== Hello
+
+ section
+
+== Hi
+
+Internal page link to <<_hello>>
