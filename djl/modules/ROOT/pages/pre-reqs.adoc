@@ -1,6 +1,7 @@
 = Pre Requisites
 :reftext: pre reqs
 :navtitle: nav pre reqs
+:icons: font
 
 include::partial$warning.adoc[]
 

@@ -1,0 +1,6 @@
+name: intro-component
+title: AI Demo introduction
+version: '1.0'
+start_page: ai-demo-intro.adoc
+nav:
+  - modules/ROOT/nav.adoc

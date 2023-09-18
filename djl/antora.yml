@@ -1,0 +1,6 @@
+name: djl-component
+title: DJL
+version: '1.0'
+start_page: djl-intro.adoc
+nav:
+  - modules/ROOT/nav.adoc
