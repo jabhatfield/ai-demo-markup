@@ -1,2 +1,44 @@
-= AI Demo intro
+= RESTful AI Demo
+:reftext: RESTful AI Demo introduction
+:navtitle: Introduction
+:icons: font
 
+.Photo by https://unsplash.com/@growtika[Growtika,window=_blank] on https://unsplash.com/photos/f0JGorLOkw0[Unsplash,window=_blank]
+image::brain.jpg[Brain neural network]
+
+*RESTful AI Demo introduction* (*RAID*) is a simple set of APIs for learning *Machine Learning* (*ML*) and
+*Deep Learning* (*DL*). It is written in Java Spring Boot and consists of two components:
+
+- ML chatbot for enquires about a zoo, based on https://opennlp.apache.org[Apache OpenNLP]
+*Natural Language Processing* (*NLP*)
+- DL image recognition of handwriting, based on https://djl.ai[Deep Java Library] (*DJL*)
+
+Use the controls in the bottom left corner of the screen to switch between documentation for each component.
+(also add links above in the list)
+
+== Definitions of Machine Learning and Deep Learning
+
+ML is a subset of AI and DL is a subset of ML:
+
+img
+
+ML typically involves providing an algorithm with example input and corresponding output data, then letting the
+algorithm run iteratively to learn the nature of these mappings. It does this by adjusting its parameters and
+comparing its calculated output, derived from the input, to the defined output. Once the model is _trained_ in
+this manner it can predict the classification of relevant input.
+
+DL
+
+DL is similar to ML in that it also learns through an iterative algorithm; however, it typically uses much more input
+data and stores its calculations in a neural network structure. The data and relationships of data are stored as
+nodes and weighted vectors. DL is powerful enough to learn on its own, without provision of example output.
+
+For more detailed definitions, see this
+https://www.advancinganalytics.co.uk/blog/2021/12/15/understanding-the-difference-between-ai-ml-and-dl-using-an-incredibly-simple-example[example of a fruit classifying factory].
+
+For a deeper understanding of the inner workings of DL and ML, see these tutorials:
+
+include::partial$tip.adoc[]
+
+* a
+* b

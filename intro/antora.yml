@@ -1,5 +1,5 @@
 name: intro-component
-title: AI Demo introduction
+title: RESTful AI Demo
 version: '1.0'
 start_page: ai-demo-intro.adoc
 nav:
