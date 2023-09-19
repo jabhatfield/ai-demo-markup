@@ -1,1 +1,4 @@
 = Intellij Setup
+
+TODO 2 tutorials each with the deep dive / generic explanation -
+use xray and girl robot photos (generic dl/ml photos)

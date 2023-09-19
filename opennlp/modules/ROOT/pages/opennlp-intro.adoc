@@ -1,2 +1,27 @@
-= OpenNLP Intro
+= Zoo Chatbot
+:reftext: Zoo Chatbot
+:navtitle: Introduction
+:icons: font
+
+.Photo by https://unsplash.com/@kovah[Kevin Woblick,window=_blank] on https://unsplash.com/photos/_54TF64ad9M[Unsplash,window=_blank]
+image::zoo.jpg[Tiger resting at the zoo]
+
+== Introduction
+
+*Zoo Chatbot* uses OpenNLP to train a set of question patterns about a zoo and match them to 1 of 5 answers.
+It can then generate the probabilities of each answer being correct.
+
+The API is composed of the following:
+
+* POST request to classify a single word TODO check
+* POST request to tokenize a sentence
+* POST request to tag tokens with parts-of-speech
+* POST request to lemmatize tokens tagged with parts-of-speech
+* POST request to chat by sending a sentence
+* GET request to retrieve possible chat responses
+* GET request to retrieve the lemmatized training data
+
+== Classify a single workd TODO check
+
+TODO swagger
 

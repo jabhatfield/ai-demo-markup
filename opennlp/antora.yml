@@ -1,5 +1,5 @@
 name: opennlp-component
-title: OpenNLP
+title: Zoo Chatbot
 version: '1.0'
 start_page: opennlp-intro.adoc
 nav:
