@@ -23,5 +23,8 @@ The API is composed of the following:
 
 == Classify a single workd TODO check
 
-TODO swagger
+TODO swagger inc doc order of arrays in responses -
+chat does nt currently sort desc
+order esp importand for e.g pos arrays that are separate
+and must align
 
