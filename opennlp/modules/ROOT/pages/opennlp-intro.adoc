@@ -39,5 +39,6 @@ pos include "like" vs "prefer" example: "tokens": [
 "eat",
 "leaves"
 ]
+- & link to Penn Treebank
 
 chat sentence inc. "message": "what are email"
