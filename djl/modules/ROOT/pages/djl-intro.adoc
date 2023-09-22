@@ -19,4 +19,4 @@ The API is composed of the following:
 
 == Classify a handwritten zero
 
-TODO swagger & rename 3-or-8 and explain it
+TODO swagger & 3-that-looks-like-8.png doc and explain it

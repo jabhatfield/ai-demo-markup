@@ -21,10 +21,23 @@ The API is composed of the following:
 * GET request to retrieve possible chat responses
 * GET request to retrieve the lemmatized training data
 
-== Classify a single workd TODO check
+== Classify a single word TODO check
 
-TODO swagger inc doc order of arrays in responses -
-chat does nt currently sort desc
+TODO swagger
+
 order esp importand for e.g pos arrays that are separate
 and must align
+gradle build bootjar instructions with screenshots
+(setup runnable as jar as well as click run icon in intellij)
 
+tokenize inc messy:  "message": "giraffes!- like to eat? leaves,oh"
+
+pos include "like" vs "prefer" example: "tokens": [
+"giraffes",
+"prefer",
+"to",
+"eat",
+"leaves"
+]
+
+chat sentence inc. "message": "what are email"
