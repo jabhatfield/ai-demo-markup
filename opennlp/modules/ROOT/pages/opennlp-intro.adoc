@@ -42,3 +42,7 @@ pos include "like" vs "prefer" example: "tokens": [
 - & link to Penn Treebank
 
 chat sentence inc. "message": "what are email"
+standardize prob dp eg 10 decimal points - then update
+
+run swagger locally check try-it-now works, add as option in docs as long
+as yml is not altered after generated inc mention openapi spec
