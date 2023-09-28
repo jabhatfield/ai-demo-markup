@@ -1,6 +1,6 @@
-name: opennlp-component
+name: zoo-chatbot-component
 title: Zoo Chatbot
 version: '1.0'
-start_page: opennlp-intro.adoc
+start_page: zoo-chatbot-intro.adoc
 nav:
   - modules/ROOT/nav.adoc

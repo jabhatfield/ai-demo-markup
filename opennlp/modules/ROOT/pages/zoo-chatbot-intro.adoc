@@ -25,7 +25,7 @@ The API is composed of the following:
 
 TODO swagger
 
-order esp importand for e.g pos arrays that are separate
+order esp important for e.g pos arrays that are separate
 and must align
 gradle build bootjar instructions with screenshots
 (setup runnable as jar as well as click run icon in intellij)
@@ -44,5 +44,31 @@ pos include "like" vs "prefer" example: "tokens": [
 chat sentence inc. "message": "what are email"
 standardize prob dp eg 10 decimal points - then update
 
-run swagger locally check try-it-now works, add as option in docs as long
+run swagger "openapi 3.0" locally check try-it-now works, add as option in docs as long
 as yml is not altered after generated inc mention openapi spec
+swagger screenshots for try / execute / clear and ensure running on default port 8080
+
+default http://localhost:8080/swagger-ui/index.html
+
+quickstart postman (quick) vs swagger - v quick and easier
+
+into project root folder then build:
+
+[source,console]
+----
+$ ./gradlew bootJar
+----
+
+run:
+
+[source,console]
+----
+$ java -jar build/libs/demo-0.0.1-SNAPSHOT.jar
+----
+
+....
+Tomcat started on port(s): 8080 (http) with context path ''
+Started AIDemoApplication in 1.894 seconds (process running for 2.253)
+....
+
+

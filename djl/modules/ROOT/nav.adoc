@@ -1,4 +1,5 @@
-* xref:djl-intro.adoc[]
-* Lists
-** xref:lists/djl-hello.adoc[]
-** xref:pre-reqs.adoc[]
+* xref:handwriting-recogniser-intro.adoc[]
+* API calls
+** xref:api-calls/classify-handwritten-zero.adoc[]
+** xref:api-calls/classify-handwritten-number.adoc[]
+** xref:api-calls/list-example-input-images.adoc[]]

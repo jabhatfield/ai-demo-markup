@@ -1,6 +1,6 @@
-name: djl-component
+name: handwriting-recogniser-component
 title: Handwriting Recogniser
 version: '1.0'
-start_page: djl-intro.adoc
+start_page: handwriting-recogniser-intro.adoc
 nav:
   - modules/ROOT/nav.adoc
