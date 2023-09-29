@@ -1,2 +1,23 @@
 = Tokenize
 
+Tokenizes a message into its constituent natural language constructs such as words and punctuation marks.
+
+== Example request
+
+[source,json]
+.POST /zoo-chatbot/tokenize
+----
+{
+  "message": "any giraffes?"
+}
+----
+
+== Example response
+
+[source,json]
+.Response
+----
+{
+  "message": "any giraffes?"
+}
+----

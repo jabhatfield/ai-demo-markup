@@ -71,4 +71,8 @@ Tomcat started on port(s): 8080 (http) with context path ''
 Started AIDemoApplication in 1.894 seconds (process running for 2.253)
 ....
 
+test and doc ImageNotFoundException - swagger is only 1 example, create table based on
+possible exceptions see ex mapping class
+
+ai-demo readme - update to point at docs
 
