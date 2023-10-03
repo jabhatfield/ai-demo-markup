@@ -1,2 +1,3 @@
 * xref:ai-demo-intro.adoc[]
 * xref:install-and-run-quickstart.adoc[]
+* xref:api-spec.adoc[]

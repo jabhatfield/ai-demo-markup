@@ -7,9 +7,7 @@ Tokenizes a message into its constituent natural language constructs such as wor
 [source,json]
 .POST /zoo-chatbot/tokenize
 ----
-{
-  "message": "any giraffes?"
-}
+include::example$tokenize-request.json[]
 ----
 
 == Example response
@@ -17,7 +15,5 @@ Tokenizes a message into its constituent natural language constructs such as wor
 [source,json]
 .Response
 ----
-{
-  "message": "any giraffes?"
-}
+include::example$tokenize-response.json[]
 ----

@@ -1,2 +1,2 @@
-= Classify handwritten zero
+= Classify a handwritten zero
 

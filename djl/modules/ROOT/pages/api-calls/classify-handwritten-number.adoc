@@ -1,2 +1,2 @@
-= Classify handwritten number
+= Classify a handwritten number
 
