@@ -1,2 +1,19 @@
 = List lemmatized classification data
 
+Lists the lemmatized classification data used for training the chatbot.
+
+== Example request
+
+[.api-title]#GET /zoo-chatbot/lemmatized-classification-data#
+
+== Example response
+
+include::partial$data-truncation-note.adoc[]
+
+[source,json]
+.Response
+----
+include::example$lemmatized-data-response.json[]
+----
+
+include::partial$more-api-details.adoc[]

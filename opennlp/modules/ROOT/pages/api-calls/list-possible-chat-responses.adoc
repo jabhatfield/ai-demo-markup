@@ -1,2 +1,19 @@
 = List possible chat responses
 
+Lists the full set of available chatbot responses.
+
+== Example request
+
+[.api-title]#GET /zoo-chatbot/chat#
+
+== Example response
+
+include::partial$data-truncation-note.adoc[]
+
+[source,json]
+.Response
+----
+include::example$possible-responses-response.json[]
+----
+
+include::partial$more-api-details.adoc[]

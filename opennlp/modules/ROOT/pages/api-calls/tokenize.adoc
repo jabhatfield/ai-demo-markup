@@ -17,3 +17,5 @@ include::example$tokenize-request.json[]
 ----
 include::example$tokenize-response.json[]
 ----
+
+include::partial$more-api-details.adoc[]

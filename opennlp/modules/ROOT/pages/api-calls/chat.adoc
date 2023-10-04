@@ -1,2 +1,23 @@
 = Chat
 
+Replies to a message with the most probable response from the set of available responses.
+
+== Example request
+
+[source,json]
+.POST /zoo-chatbot/chat
+----
+include::example$chat-request.json[]
+----
+
+== Example response
+
+include::partial$data-truncation-note.adoc[]
+
+[source,json]
+.Response
+----
+include::example$chat-response.json[]
+----
+
+include::partial$more-api-details.adoc[]

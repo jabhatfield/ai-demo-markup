@@ -1,2 +1,21 @@
 = Tag parts of speech
 
+Tags an array of tokens with part-of-speech labels such as word classes and punctuation marks.
+
+== Example request
+
+[source,json]
+.POST /zoo-chatbot/tag-parts-of-speech
+----
+include::example$pos-request.json[]
+----
+
+== Example response
+
+[source,json]
+.Response
+----
+include::example$pos-response.json[]
+----
+
+include::partial$more-api-details.adoc[]

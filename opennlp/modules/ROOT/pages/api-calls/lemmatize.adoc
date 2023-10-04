@@ -1,2 +1,21 @@
 = Lemmatize
 
+Lemmatizes an array of tokens that must be provided with their part-of-speech tags.
+
+== Example request
+
+[source,json]
+.POST /zoo-chatbot/lemmatize
+----
+include::example$lemmatize-request.json[]
+----
+
+== Example response
+
+[source,json]
+.Response
+----
+include::example$lemmatize-response.json[]
+----
+
+include::partial$more-api-details.adoc[]
