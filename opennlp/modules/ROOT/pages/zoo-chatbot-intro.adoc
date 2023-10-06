@@ -23,10 +23,9 @@ The API is composed of the following:
 
 == Classify a single word TODO check
 
-TODO swagger
 
-order esp important for e.g pos arrays that are separate
-and must align
+
+
 gradle build bootjar instructions with screenshots
 (setup runnable as jar as well as click run icon in intellij)
 
@@ -52,27 +51,11 @@ default http://localhost:8080/swagger-ui/index.html
 
 quickstart postman (quick) vs swagger - v quick and easier
 
-into project root folder then build:
 
-[source,console]
-----
-$ ./gradlew bootJar
-----
-
-run:
-
-[source,console]
-----
-$ java -jar build/libs/demo-0.0.1-SNAPSHOT.jar
-----
-
-....
-Tomcat started on port(s): 8080 (http) with context path ''
-Started AIDemoApplication in 1.894 seconds (process running for 2.253)
-....
 
 test and doc ImageNotFoundException - swagger is only 1 example, create table based on
 possible exceptions see ex mapping class
 
 ai-demo readme - update to point at docs
 
+xrefs tut <-> openapi <-> quickstart

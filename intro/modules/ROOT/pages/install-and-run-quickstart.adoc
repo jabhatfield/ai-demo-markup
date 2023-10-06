@@ -1,2 +1,54 @@
 = Install and run quickstart
 
+Follow this quickstart to achieve the following operations:
+
+* [x] Send a chat message to the xref:zoo-chatbot-component::zoo-chatbot-intro.adoc[] and receive an answer.
+* [x] Send an image of a handwritten number to the xref:handwriting-recogniser-component::handwriting-recogniser-intro.adoc[]
+and receive its numerical value.
+
+== Prerequisites
+
+* Java version 17 or higher. https://openjdk.org[OpenJDK,window=_blank] downloaded via
+https://sdkman.io[SDKMAN!,window=_blank] is recommended
+* https://git-scm.com/downloads[Git,window=_blank]
+
+== Build
+
+Clone the code from https://github.com/jon-hatfield-tech-writing/ai-demo[GitHub,window=_blank] then use an IDE or the command
+line to continue.
+
+=== Build with an IDE
+
+Import the code as a Java project. https://www.jetbrains.com/idea/[IntelliJ,window=_blank] is recommended.
+
+[TIP]
+====
+RAID uses https://projectlombok.org[Lombok,window=_blank] to reduce boilerplate code. Ensure that the IDE has a Lombok plugin
+and that annotation processing is enabled.
+====
+
+=== Build with the command line
+
+Go into the project root folder and build an executable JAR as follows:
+
+[source,console]
+----
+$ ./gradlew bootJar
+----
+
+== Run
+
+Ensure RAID is xref:_build[built] then run with an IDE or the command line.
+
+=== Run with an IDE
+
+Open `AIDemoApplication.java` and run the `main` method using the IDE *Play* button.
+
+=== Run with the command line
+
+Go into the project root folder and run the executable JAR as follows:
+
+[source,console]
+----
+$ java -jar build/libs/demo-0.0.1-SNAPSHOT.jar
+----
