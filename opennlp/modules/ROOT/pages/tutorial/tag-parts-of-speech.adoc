@@ -2,6 +2,14 @@
 
 Tags an array of tokens with part-of-speech labels such as word classes and punctuation marks.
 
+pos include "like" vs "prefer" example: "tokens": [
+"giraffes",
+"prefer",
+"to",
+"eat",
+"leaves"
+]
+
 == Example request
 
 [source,json]
@@ -17,5 +25,3 @@ include::example$pos-request.json[]
 ----
 include::example$pos-response.json[]
 ----
-
-include::partial$more-api-details.adoc[]

@@ -17,5 +17,3 @@ include::example$lemmatize-request.json[]
 ----
 include::example$lemmatize-response.json[]
 ----
-
-include::partial$more-api-details.adoc[]

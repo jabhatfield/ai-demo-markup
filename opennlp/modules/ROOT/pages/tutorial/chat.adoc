@@ -2,6 +2,8 @@
 
 Replies to a message with the most probable response from the set of available responses.
 
+chat sentence inc. "message": "what are email"
+
 == Example request
 
 [source,json]
@@ -19,5 +21,3 @@ include::intro-component::partial$data-truncation-note.adoc[]
 ----
 include::example$chat-response.json[]
 ----
-
-include::partial$more-api-details.adoc[]

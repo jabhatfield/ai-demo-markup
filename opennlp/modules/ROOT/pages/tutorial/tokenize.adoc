@@ -1,0 +1,43 @@
+= Tokenize
+
+A chat message must first be tokenized into its constituent natural language constructs such as words and punctuation marks.
+
+== Basic request
+
+Send the following chat request:
+
+[source,json]
+.POST /zoo-chatbot/tokenize
+----
+include::example$tokenize-request.json[]
+----
+
+== Response
+
+Notice how the message is split into two words and a question mark, with high probabilities of correctness:
+
+[source,json]
+.Response
+----
+include::example$tokenize-response.json[]
+----
+
+== Erroneous request
+
+Chatbots must deal with typos and grammatical mistakes. Send the following request which contains such errors:
+
+[source,json]
+.POST /zoo-chatbot/tokenize
+----
+include::example$tokenize-request-messy.json[]
+----
+
+== Response
+
+Notice that the probabilities of correctness of the tokens are lower for the erroneous parts of the message:
+
+[source,json]
+.Response
+----
+include::example$tokenize-response-messy.json[]
+----

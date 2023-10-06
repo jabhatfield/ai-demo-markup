@@ -15,5 +15,3 @@ include::intro-component::partial$data-truncation-note.adoc[]
 ----
 include::example$possible-responses-response.json[]
 ----
-
-include::partial$more-api-details.adoc[]

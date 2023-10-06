@@ -23,43 +23,10 @@ The API is composed of the following:
 
 == Classify a single word TODO check
 
-
-
-
-gradle build bootjar instructions with screenshots
-(setup runnable as jar as well as click run icon in intellij)
-
-tokenize inc messy:  "message": "giraffes!- like to eat? leaves,oh"
-
-pos include "like" vs "prefer" example: "tokens": [
-"giraffes",
-"prefer",
-"to",
-"eat",
-"leaves"
-]
-- & link to Penn Treebank
-
-chat sentence inc. "message": "what are email"
-standardize prob dp eg 10 decimal points - then update
-
-run swagger "openapi 3.0" locally check try-it-now works, add as option in docs as long
-as yml is not altered after generated inc mention openapi spec
-swagger screenshots for try / execute / clear and ensure running on default port 8080
-
-default http://localhost:8080/swagger-ui/index.html
-
-quickstart postman (quick) vs swagger - v quick and easier
-
-
-
-test and doc ImageNotFoundException - swagger is only 1 example, create table based on
-possible exceptions see ex mapping class
-
 ai-demo readme - update to point at docs
 
 xrefs tut <-> openapi <-> quickstart
 
-
 deep dive inc
 pre-t bins, ml training, dl training
+& link to Penn Treebank
