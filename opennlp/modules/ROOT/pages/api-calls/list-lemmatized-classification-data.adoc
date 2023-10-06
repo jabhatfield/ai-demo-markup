@@ -8,7 +8,7 @@ Lists the lemmatized classification data used for training the chatbot.
 
 == Example response
 
-include::partial$data-truncation-note.adoc[]
+include::intro-component::partial$data-truncation-note.adoc[]
 
 [source,json]
 .Response

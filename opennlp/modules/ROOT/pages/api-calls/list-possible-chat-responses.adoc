@@ -8,7 +8,7 @@ Lists the full set of available chatbot responses.
 
 == Example response
 
-include::partial$data-truncation-note.adoc[]
+include::intro-component::partial$data-truncation-note.adoc[]
 
 [source,json]
 .Response

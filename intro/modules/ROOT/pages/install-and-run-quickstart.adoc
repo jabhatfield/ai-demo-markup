@@ -76,7 +76,7 @@ include::zoo-chatbot-component::example$chat-request.json[]
 
 The response is as follows:
 
-include::zoo-chatbot-component::partial$data-truncation-note.adoc[]
+include::intro-component::partial$data-truncation-note.adoc[]
 
 [source,json]
 .Response
@@ -84,3 +84,26 @@ include::zoo-chatbot-component::partial$data-truncation-note.adoc[]
 include::zoo-chatbot-component::example$chat-response.json[]
 ----
 
+=== Send an image of a handwritten number
+
+Send the following image recognition request:
+
+[source,json]
+.POST /handwriting-recogniser/classify-handwritten-number
+----
+include::handwriting-recogniser-component::example$handwritten-number-request-zero.json[]
+----
+
+The response is as follows:
+
+include::intro-component::partial$data-truncation-note.adoc[]
+
+[source,json]
+.Response
+----
+include::handwriting-recogniser-component::example$handwritten-zero-response.json[]
+----
+
+== Learn more
+
+TODO link tutorials, link deep dives, link full spec
