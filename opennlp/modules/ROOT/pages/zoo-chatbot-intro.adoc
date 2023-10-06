@@ -59,3 +59,6 @@ possible exceptions see ex mapping class
 ai-demo readme - update to point at docs
 
 xrefs tut <-> openapi <-> quickstart
+
+is djl also same prob each build/train or different:
+deep dive why opennlp / dlj same / different each time

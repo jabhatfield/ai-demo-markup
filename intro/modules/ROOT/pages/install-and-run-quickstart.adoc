@@ -38,7 +38,7 @@ $ ./gradlew bootJar
 
 == Run
 
-Ensure RAID is xref:_build[built] then run with an IDE or the command line.
+Ensure RAID is xref:_build[built] then run it with an IDE or the command line.
 
 === Run with an IDE
 
@@ -52,3 +52,35 @@ Go into the project root folder and run the executable JAR as follows:
 ----
 $ java -jar build/libs/demo-0.0.1-SNAPSHOT.jar
 ----
+
+== Use the RESTful API
+
+Access the API on the root context path `/`:
+
+----
+http://localhost:8080/
+----
+
+The easiest way to call the API operations is to xref:api-spec.adoc[use the Swagger UI]. Alternatively, use
+https://www.postman.com[Postman,window=_blank] or `curl` and ensure that the `Content-Type` header is set to `application/json`.
+
+=== Send a chat message
+
+Send the following chat request:
+
+[source,json]
+.POST /zoo-chatbot/chat
+----
+include::zoo-chatbot-component::example$chat-request.json[]
+----
+
+The response is as follows:
+
+include::zoo-chatbot-component::partial$data-truncation-note.adoc[]
+
+[source,json]
+.Response
+----
+include::zoo-chatbot-component::example$chat-response.json[]
+----
+
