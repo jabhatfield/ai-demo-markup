@@ -1,8 +1,12 @@
 = Lemmatize
 
-Lemmatizes an array of tokens that must be provided with their part-of-speech tags.
+The xref:tutorial/tag-parts-of-speech.adoc[part-of-speech tags] allow the xref:tutorial/tokenize.adoc[tokens] to be
+lemmatized. Lemmatization involves turning a word into its base form, or _lemma_. For example, the words `am`, `are`
+and `is` are all forms of the verb `be`. This process allows variants of the same word to be recognised.
 
 == Example request
+
+Send the following set of tokens and associated part-of-speech tags:
 
 [source,json]
 .POST /zoo-chatbot/lemmatize
@@ -11,6 +15,9 @@ include::example$lemmatize-request.json[]
 ----
 
 == Example response
+
+Notice that the word `any` is already in its base form and the word `giraffes` is converted to its base form of
+`giraffe`:
 
 [source,json]
 .Response
