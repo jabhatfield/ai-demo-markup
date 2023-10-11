@@ -1,14 +1,25 @@
 = List lemmatized classification data
 
-Lists the lemmatized classification data used for training the chatbot.
+This endpoint lists the lemmatized classification data used for training the chatbot. It consists of lemmatized
+chat phrases that a user could potentially type, along with their associated reply category.
+
+Note the following two advantages of lemmatizing the training data:
+
+* The input message data is xref:tutorial/lemmatize.adoc[also lemmatized] and therefore aligns more closely
+when calculating a match
+* Less training data is required because fewer variants of words are required: variants converge onto their lemma.
 
 == Example request
+
+Send the following request:
 
 [.api-title]#GET /zoo-chatbot/lemmatized-classification-data#
 
 == Example response
 
 include::intro-component::partial$data-truncation-note.adoc[]
+
+Notice that the data is lemmatized:
 
 [source,json]
 .Response

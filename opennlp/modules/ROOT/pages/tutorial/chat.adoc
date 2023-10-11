@@ -1,10 +1,19 @@
 = Chat
 
-Replies to a message with the most probable response from the set of available responses.
+The chat endpoint uses all the previous techniques to prepare a message:
 
-chat sentence inc. "message": "what are email"
+1. xref:tutorial/tokenize.adoc[Tokenization]
+2. xref:tutorial/tag-parts-of-speech.adoc[Part-of-speech tagging]
+3. xref:tutorial/lemmatize.adoc[Lemmatization]
+
+The chatbot is then trained on xref:tutorial/list-lemmatized-classification-data.adoc[lemmatized classification data],
+which maps various potential input expressions to a set of
+xref:tutorial/list-possible-chat-responses.adoc[possible chat responses]. Finally, the endpoint replies with the most
+probable response from the set of possible responses.
 
 == Example request
+
+Send the following chat message:
 
 [source,json]
 .POST /zoo-chatbot/chat
@@ -15,6 +24,8 @@ include::example$chat-request.json[]
 == Example response
 
 include::intro-component::partial$data-truncation-note.adoc[]
+
+Notice that the most relevant reply is returned:
 
 [source,json]
 .Response
