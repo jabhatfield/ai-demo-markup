@@ -1,2 +1,20 @@
 = List example input images
 
+This endpoint returns the names of the example images available for classification.
+
+== Request
+
+Send the following request:
+
+[.api-title]#GET /handwriting-recogniser/example-input-images#
+
+== Response
+
+Notice that the image names correspond to `fileName` in the xref:tutorial/classify-handwritten-number.adoc[] example
+requests:
+
+[source,json]
+.Response
+----
+include::example$example-input-images-response.json[]
+----

@@ -1,4 +1,5 @@
 = Summary
 
 Congratulations! You have learnt to use the set of Zoo Chatbot API operations and have a basic understanding of them.
-See the TODO link deep dive for a deeper understanding of the Zoo Chatbot inner workings.
+See the xref:intro-component::api-spec.adoc[] for more details and the TODO link deep dive for a deeper understanding
+of the Zoo Chatbot inner workings.
