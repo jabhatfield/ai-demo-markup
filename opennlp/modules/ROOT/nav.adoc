@@ -6,3 +6,4 @@
 ** xref:tutorial/chat.adoc[]
 ** xref:tutorial/list-possible-chat-responses.adoc[]
 ** xref:tutorial/list-lemmatized-classification-data.adoc[]
+** xref:tutorial/summary.adoc[]

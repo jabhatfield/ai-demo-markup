@@ -1,5 +1,6 @@
 * xref:handwriting-recogniser-intro.adoc[]
-* API calls
-** xref:api-calls/classify-handwritten-zero.adoc[]
-** xref:api-calls/classify-handwritten-number.adoc[]
-** xref:api-calls/list-example-input-images.adoc[]]
+* xref:tutorial/handwriting-recogniser-tutorial.adoc[Tutorial]
+** xref:tutorial/classify-handwritten-zero.adoc[]
+** xref:tutorial/classify-handwritten-number.adoc[]
+** xref:tutorial/list-example-input-images.adoc[]
+** xref:tutorial/summary.adoc[]

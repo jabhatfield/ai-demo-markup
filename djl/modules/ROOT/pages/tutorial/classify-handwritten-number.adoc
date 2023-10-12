@@ -1,2 +1,3 @@
 = Classify a handwritten number
 
+important make sure rebuild

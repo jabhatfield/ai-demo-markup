@@ -16,6 +16,3 @@ This tutorial will teach you the following operations:
 == Prerequisites
 
 Run the application locally by following the xref:intro-component::install-and-run-quickstart.adoc[].
-
-TODO summary.adoc congrats at end as per gtw & link deep dive
-(possibly keep more-api-details partial)

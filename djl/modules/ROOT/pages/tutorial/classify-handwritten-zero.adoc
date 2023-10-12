@@ -1,0 +1,25 @@
+= Classify a handwritten zero
+
+This endpoint classifies an https://resources.djl.ai/images/0.png[image of a handwritten zero,window=_blank] that has
+been provided by http://djl.ai[DJL,window=_blank]. A neural network trained on the
+https://en.wikipedia.org/wiki/MNIST_database[MNIST database of handwritten digits,window=_blank] performs the classification.
+
+== Request
+
+include::partial$training-duration-warning.adoc[]
+
+Send the following empty POST request:
+
+[.api-title]#POST /handwriting-recogniser/classify-handwritten-zero#
+
+== Response
+
+include::intro-component::partial$data-truncation-note.adoc[]
+
+Notice that the image is recognised as `0`, with a high probability of correctness:
+
+[source,json]
+.Response
+----
+include::example$handwritten-zero-response.json[]
+----
