@@ -1,3 +1,37 @@
 = Classify a handwritten number
 
+This endpoint classifies any image of a handwritten number that conforms to the
+https://en.wikipedia.org/wiki/MNIST_database[MNIST database format,window=_blank]: a black-and-white number from zero
+to nine, sized 28x28 pixels. A neural network trained on the
+https://en.wikipedia.org/wiki/MNIST_database[MNIST database of handwritten digits,window=_blank] performs the classification.
+
+include::partial$training-duration-warning.adoc[]
+
+== Handwritten-zero request
+
+Send the following request to explicitly process the same image processed by the xref:tutorial/classify-handwritten-zero.adoc[]
+endpoint:
+
+[source,json]
+.POST /handwriting-recogniser/classify-handwritten-number
+----
+include::example$handwritten-number-request-zero.json[]
+----
+
+== Response
+
+include::intro-component::partial$data-truncation-note.adoc[]
+
+Notice that the image is recognised as `0`, with a high probability of correctness:
+
+[source,json]
+.Response
+----
+include::example$handwritten-zero-response.json[]
+----
+
+== Handwritten-one request
+
+
+
 important make sure rebuild

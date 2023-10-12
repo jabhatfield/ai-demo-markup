@@ -18,7 +18,7 @@ Send the following tokenized message:
 include::example$pos-request.json[]
 ----
 
-== Example response
+== Response
 
 Notice that `any` is identified as a determiner and `giraffes` is identified as a plural noun. The full stop denotes
 the end of a sentence:

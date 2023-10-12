@@ -14,7 +14,7 @@ Send the following set of tokens and associated part-of-speech tags:
 include::example$lemmatize-request.json[]
 ----
 
-== Example response
+== Response
 
 Notice that the word `any` is already in its base form and the word `giraffes` is converted to its base form of
 `giraffe`:

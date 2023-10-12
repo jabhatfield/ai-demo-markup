@@ -4,9 +4,9 @@ This endpoint classifies an https://resources.djl.ai/images/0.png[image of a han
 been provided by http://djl.ai[DJL,window=_blank]. A neural network trained on the
 https://en.wikipedia.org/wiki/MNIST_database[MNIST database of handwritten digits,window=_blank] performs the classification.
 
-== Request
-
 include::partial$training-duration-warning.adoc[]
+
+== Request
 
 Send the following empty POST request:
 

@@ -9,13 +9,13 @@ Note the following two advantages of lemmatizing the training data:
 when calculating a match
 * Less training data is required because fewer variants of words are required: variants converge onto their lemma.
 
-== Example request
+== Request
 
 Send the following request:
 
 [.api-title]#GET /zoo-chatbot/lemmatized-classification-data#
 
-== Example response
+== Response
 
 include::intro-component::partial$data-truncation-note.adoc[]
 
