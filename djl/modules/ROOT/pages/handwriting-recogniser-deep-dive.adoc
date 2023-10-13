@@ -17,7 +17,7 @@ The MLP consists of multiple layers:
 * Hidden layer. Calculates output to the next layer
 * Output layer. Calculates the result
 
-The hidden layer contains the functions that assign weights to nodes and therefore represents the core of the network.
+The hidden layer contains the functions that assign weights to nodes and represents the core of the network.
 The network can have multiple hidden layers, depending on the complexity of its functionality.
 
 === Feedforward neural networks
@@ -33,20 +33,57 @@ speech recognition data.
 === Backpropagation
 
 A neural network model uses its state, in terms of node weights, to predict an outcome. Backpropagation is the
-backward amendment of network node weights based on the discrepancy between predicted and actual outcome. It occurs
+backward amendment of network node weights based on the discrepancy between predicted and actual outcome
+=loss function
+. It occurs
 during training to refine the model until one of the following occurs:
 
-* The algorithm converges
+* The algorithm converges, meaning it reaches a stable value
 * The specified number of iterations is reached
 
 Handwriting Recogniser implements the latter: a finite number of iterations.
 
-Backpropagation is a
+
+
+bp implements a loss function - represents the error
+minimizes the loss by giving the nodes with higher error rates lower weights, and vice versa
+gradient descent is the process of using gradients to find the minimum value of the cost function
 
 minimises a loss function using gradient descent
 
+gradient of the loss function depends on the activation function.
+
 === ReLU activation function
 
+An activation function calculates node output based on the input. ReLU returns output as equal to the input when the
+value is positive, otherwise it returns zero.
 
+graph: _/
+
+Notice that the rate of change of this function, or derivative, is 0 for negative values and 1 for positive values.
+This property
+of the function is important for preventing the:
+vanishing gradient problem - the rate of change of the loss function approaches 0, causing the network learns slowly
+or not at all. Some other activation functions have this property. For example, the sigmoid function rate of change
+is close to 0 for many input values.
+
+The term gradient refers to the rate of change
+weights - strength of the connections between nodes. determine how much a change in input affects change in output
+
+gradient descent uses gradients to minimise the cost function, or loss function. optimises. moves in direction of
+steepest descent. Iteratively approaches a state best representing the training data
+bp calculate these gradients backwards - is relu back or forth? act f is forward
+analogous to efficiently moving from the top of a mountain to the lowest point of a valley, by iteratively moving
+downwards in the steepest direction
+negative gradient of error calculated which determines how much to change the weights. These new weight values are
+calculated with the g desc optimization algorithm.
+
+relu - 1 occurs often enough to prevent approach 0
+
+bookmarked diagrams
 
 input enters the layer and multiplied by the weights. if result above threshold 1, else -1 / 0 (relu = 0)
+
+add other djlservice code samples meaning
+djl guide - add points
+final email points
