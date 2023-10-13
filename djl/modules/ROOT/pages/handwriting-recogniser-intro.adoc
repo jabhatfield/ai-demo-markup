@@ -8,8 +8,8 @@ image::handwriting.jpg[Handwriting]
 
 == Introduction
 
-*Handwriting Recogniser* uses DJL to train a neural network on images of handwritten numbers within the range of 0 - 9.
-It can then generate the probabilities of an input image matching each of these numbers.
+Handwriting Recogniser uses http://djl.ai[DJL,window=_blank] to train a neural network on images of handwritten numbers
+within the range of 0 - 9. It can then generate the probabilities of an input image matching each of these numbers.
 
 The API is composed of the following:
 

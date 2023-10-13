@@ -8,8 +8,8 @@ image::zoo.jpg[Tiger resting at the zoo]
 
 == Introduction
 
-*Zoo Chatbot* uses OpenNLP to train a set of question patterns about a zoo and match them to 1 of 5 answers.
-It can then generate the probabilities of each answer being correct.
+Zoo Chatbot uses https://opennlp.apache.org[OpenNLP,window=_blank] to train a set of question patterns about a zoo and
+match them to 1 of 5 answers. It can then generate the probabilities of each answer being correct.
 
 The API is composed of the following:
 

@@ -1,0 +1,5 @@
+= Zoo Chatbot deep dive
+:navtitle: Deep dive
+:icons: font
+
+inc bag of words - words as numbers

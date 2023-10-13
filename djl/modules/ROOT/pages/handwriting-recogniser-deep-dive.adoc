@@ -1,0 +1,52 @@
+= Handwriting Recogniser deep dive
+:navtitle: Deep dive
+:icons: font
+
+Handwriting Recogniser implements a *multilayer perceptron* (*MLP*) neural network trained on the
+https://en.wikipedia.org/wiki/MNIST_database[MNIST database] of handwritten numbers.
+
+== Multilayer perceptron neural networks
+
+An MLP is a <<_feedforward_neural_networks,feedforward neural network>> with <<_backpropagation,backpropagation>>.
+It supports multiple activation functions and Handwriting Recogniser implements the
+<<_relu_activation_function,*Rectified Linear Unit* (*ReLU*)>> activation function.
+
+The MLP consists of multiple layers:
+
+* Input layer. Contains the input data
+* Hidden layer. Calculates output to the next layer
+* Output layer. Calculates the result
+
+The hidden layer contains the functions that assign weights to nodes and therefore represents the core of the network.
+The network can have multiple hidden layers, depending on the complexity of its functionality.
+
+=== Feedforward neural networks
+
+In a feedforward neural network, information flows in one direction, from input towards output. This design suits
+classification tasks, such as image recognition, because it allows an independent variable (the input to classify) to
+map to specified dependent variables (output classification options).
+
+The alternative to feedforward is recurrent neural networks, whereby information can flow in loops. This allows memory
+within the network, making these networks suited for processing sequential data that relies on prior input, such as
+speech recognition data.
+
+=== Backpropagation
+
+A neural network model uses its state, in terms of node weights, to predict an outcome. Backpropagation is the
+backward amendment of network node weights based on the discrepancy between predicted and actual outcome. It occurs
+during training to refine the model until one of the following occurs:
+
+* The algorithm converges
+* The specified number of iterations is reached
+
+Handwriting Recogniser implements the latter: a finite number of iterations.
+
+Backpropagation is a
+
+minimises a loss function using gradient descent
+
+=== ReLU activation function
+
+
+
+input enters the layer and multiplied by the weights. if result above threshold 1, else -1 / 0 (relu = 0)
