@@ -16,25 +16,27 @@ until one of the following occurs:
 * The training algorithm converges, meaning it reaches a stable value
 * The specified number of iterations is reached
 
-== Multilayer perceptron neural networks
+== Multilayer perceptron
 
 Handwriting Recogniser implements a *multilayer perceptron* (*MLP*) neural network trained on the
-https://en.wikipedia.org/wiki/MNIST_database[MNIST database] of handwritten numbers.
-An MLP is a <<_feedforward_neural_networks,feedforward neural network>> with <<_backpropagation,backpropagation>>.
-
-It supports multiple activation functions and Handwriting Recogniser implements the
-<<_relu_activation_function,*Rectified Linear Unit* (*ReLU*)>> activation function.
-
-The MLP consists of multiple layers:
+https://en.wikipedia.org/wiki/MNIST_database[MNIST database] of handwritten numbers. An MLP consists of multiple layers,
+as illustrated in TODO figure x:
 
 * Input layer. Contains the input data
 * Hidden layer. Calculates output to the next layer
 * Output layer. Calculates the result
 
-The hidden layer contains the functions that assign weights to nodes and represents the core of the network.
+The hidden layer is the core of the network. It contains the functions that activate nodes and recalculate weights.
 The network can have multiple hidden layers, depending on the complexity of its functionality.
 
-=== Feedforward neural networks
+The MLP has the following characteristics, which are explained in following sections:
+
+* <<_feedforward_processing,Feedforward processing>>
+* <<_backpropagation,Backpropagation>>
+* <<_gradient_descent,Gradient descent>>
+* <<_relu_activation_function,Rectified Linear Unit activation function>>
+
+== Feedforward processing
 
 In a feedforward neural network, information flows in one direction, from input towards output. This design suits
 classification tasks, such as image recognition, because it allows an independent variable (the input to classify) to
@@ -44,15 +46,38 @@ The alternative to feedforward is recurrent neural networks, whereby information
 within the network, making these networks suited for processing sequential data that relies on prior input, such as
 speech recognition data.
 
-=== Backpropagation
+== Backpropagation
 
-A neural network model uses its state, in terms of node weights, to predict an outcome. Backpropagation is the
-backward amendment of network node weights based on the discrepancy between predicted and actual outcome
+The neural network uses its state, in terms of weights, to predict an outcome. During training, the discrepancy between
+predicted and actual outcome is calculated by a _loss function_, which is a mathematical representation of error,
+and this error must be minimised in order to optimise the network. Backpropagation is the calculation of the rate of change,
+or derivative, of the loss function, for each weight. Since a derivative indicates the direction in which a function
+increases, the negative of the derivative is used to indicate the direction of loss function minimisation and therefore
+optimisation.
+
+Backpropagation only ascertains how to optimise the network, it does not perform the optimisation itself.
+<<_gradient_descent,Gradient descent>> performs the optimisation.
+
+== Gradient descent
+
+Gradient descent is an algorithm that descends the gradient defined by <<_backpropagation,backpropagation>>.
+
+diagram
+
+This is achieved by a combination of backpropagation and
+its supporting algorithm, gradient descent, as follows:
+
+1.
+2. Perform an iteration of gradient descent to move towards minimisation of the loss function.
+
+
+Backpropagation is the
+backward amendment of network node weights, during training, based on .
+This discrepancy is modelled as _loss function_,
+
 =loss function
 . It occurs
 during training to refine the model
-
-Handwriting Recogniser implements the latter: a finite number of iterations.
 
 
 
@@ -66,8 +91,8 @@ gradient of the loss function depends on the activation function.
 
 === ReLU activation function
 
-An activation function calculates node output based on the input. ReLU returns output as equal to the input when the
-value is positive, otherwise it returns zero.
+An activation function calculates node output based on the input. The *Rectified Linear Unit* (*ReLU*) returns output as
+equal to the input when the value is positive, otherwise it returns zero.
 
 graph: _/
 
