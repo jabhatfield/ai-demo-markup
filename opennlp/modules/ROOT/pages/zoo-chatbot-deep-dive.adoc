@@ -2,4 +2,6 @@
 :navtitle: Deep dive
 :icons: font
 
+This deep dive outlines the main concepts of the Zoo Chatbot inner workings.
+
 inc bag of words - words as numbers

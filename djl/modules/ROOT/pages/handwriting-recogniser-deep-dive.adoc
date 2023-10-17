@@ -2,12 +2,26 @@
 :navtitle: Deep dive
 :icons: font
 
-Handwriting Recogniser implements a *multilayer perceptron* (*MLP*) neural network trained on the
-https://en.wikipedia.org/wiki/MNIST_database[MNIST database] of handwritten numbers.
+This deep dive outlines the main concepts of the Handwriting Recogniser inner workings.
+
+== Neural networks
+
+A neural network is an artificial representation of the human brain. It comprises computational nodes and
+their weighted interconnections, analogous to neurons and synapses. Input data flows though layers of nodes, with node output
+determined by incoming weights plus a mathematical function called an <<_relu_activation_function,activation function>>.
+
+Prior to user input, weights are randomly initialized and iteratively trained on training data, to refine the model,
+until one of the following occurs:
+
+* The training algorithm converges, meaning it reaches a stable value
+* The specified number of iterations is reached
 
 == Multilayer perceptron neural networks
 
+Handwriting Recogniser implements a *multilayer perceptron* (*MLP*) neural network trained on the
+https://en.wikipedia.org/wiki/MNIST_database[MNIST database] of handwritten numbers.
 An MLP is a <<_feedforward_neural_networks,feedforward neural network>> with <<_backpropagation,backpropagation>>.
+
 It supports multiple activation functions and Handwriting Recogniser implements the
 <<_relu_activation_function,*Rectified Linear Unit* (*ReLU*)>> activation function.
 
@@ -36,10 +50,7 @@ A neural network model uses its state, in terms of node weights, to predict an o
 backward amendment of network node weights based on the discrepancy between predicted and actual outcome
 =loss function
 . It occurs
-during training to refine the model until one of the following occurs:
-
-* The algorithm converges, meaning it reaches a stable value
-* The specified number of iterations is reached
+during training to refine the model
 
 Handwriting Recogniser implements the latter: a finite number of iterations.
 
