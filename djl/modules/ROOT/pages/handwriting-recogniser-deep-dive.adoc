@@ -35,6 +35,7 @@ The MLP has the following characteristics, which are explained in following sect
 * <<_backpropagation,Backpropagation>>
 * <<_gradient_descent,Gradient descent>>
 * <<_relu_activation_function,Rectified Linear Unit activation function>>
+* <<_softmax_activation_function,Softmax activation function>>
 
 == Feedforward processing
 
@@ -67,7 +68,7 @@ visualisation of the process.
 
 diagram
 
-=== ReLU activation function
+== ReLU activation function
 
 gradient of the loss function calculated by back p depends on the activation function.
 
@@ -95,14 +96,13 @@ Compare the ReLU derivatives in figure 123 with the sigmoid derivatives in figur
 of weights that result in non-zero derivatives. ReLU is therefore more likely to make progress during gradient descent
 and reach an optimal solution.
 
+== Softmax activation function
 
-
+The softmax function is used in the final layer of the network, instead of the
+<<_relu_activation_function,ReLU activation function>>, to output the result. It normalises the output values to
+probabilities of correctness between 0 and 1. These probabilities sum up to 1 and can therefore be regarded as percentages.
 
 bookmarked diagrams
-
-add other djlservice code samples meaning
-
-final email points
 
 == Learn more
 
