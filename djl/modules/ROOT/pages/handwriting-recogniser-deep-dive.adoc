@@ -60,66 +60,51 @@ Backpropagation only ascertains how to optimise the network, it does not perform
 
 == Gradient descent
 
-Gradient descent is an algorithm that descends the gradient defined by <<_backpropagation,backpropagation>>.
+Gradient descent is an algorithm that descends the gradient defined by <<_backpropagation,backpropagation>>. It amends
+the network weights iteratively until the loss function is minimised. This is analogous to descending a mountain peak,
+in steps, in the direction of the steepest slope, until the lowest valley is reached. See figure X TODO for a
+visualisation of the process.
 
 diagram
 
-This is achieved by a combination of backpropagation and
-its supporting algorithm, gradient descent, as follows:
-
-1.
-2. Perform an iteration of gradient descent to move towards minimisation of the loss function.
-
-
-Backpropagation is the
-backward amendment of network node weights, during training, based on .
-This discrepancy is modelled as _loss function_,
-
-=loss function
-. It occurs
-during training to refine the model
-
-
-
-bp implements a loss function - represents the error
-minimizes the loss by giving the nodes with higher error rates lower weights, and vice versa
-gradient descent is the process of using gradients to find the minimum value of the cost function
-
-minimises a loss function using gradient descent
-
-gradient of the loss function depends on the activation function.
-
 === ReLU activation function
 
-An activation function calculates node output based on the input. The *Rectified Linear Unit* (*ReLU*) returns output as
-equal to the input when the value is positive, otherwise it returns zero.
+gradient of the loss function calculated by back p depends on the activation function.
+
+An activation function calculates node output based on the input. If the output exceeds a defined threshold, the node
+is activated and passes data onwards through its outward connections. Activation functions are typically non-linear
+in order to introduce variance and therefore learn; a linear function would simply propagate input. Handwriting Recogniser
+uses the *Rectified Linear Unit* (*ReLU*) activation function, which returns output as equal to the input when the value
+is positive, otherwise it returns zero (see figure x TODO).
 
 graph: _/
 
-Notice that the rate of change of this function, or derivative, is 0 for negative values and 1 for positive values.
-This property
-of the function is important for preventing the:
-vanishing gradient problem - the rate of change of the loss function approaches 0, causing the network learns slowly
-or not at all. Some other activation functions have this property. For example, the sigmoid function rate of change
-is close to 0 for many input values.
+The activation function is also involved in the <<_backpropagation,backpropagation>> derivative calculations.
+Notice that the derivative of ReLU is 0 for negative values and 1 for positive values, as illustrated in figure x TODO.
 
-The term gradient refers to the rate of change
-weights - strength of the connections between nodes. determine how much a change in input affects change in output
+derivative graph 123
 
-gradient descent uses gradients to minimise the cost function, or loss function. optimises. moves in direction of
-steepest descent. Iteratively approaches a state best representing the training data
-bp calculate these gradients backwards - is relu back or forth? act f is forward
-analogous to efficiently moving from the top of a mountain to the lowest point of a valley, by iteratively moving
-downwards in the steepest direction
-negative gradient of error calculated which determines how much to change the weights. These new weight values are
-calculated with the g desc optimization algorithm.
+The derivative of the activation function is important for preventing the vanishing gradient problem, whereby the
+backpropagation derivatives prematurely approach 0 during <<_gradient_descent,gradient descent>>, causing the network
+to learn slowly or not at all. Vanishing gradients occur when implementing an activation function with derivatives that
+are close to 0 for many input values, such as the sigmoid function (see figure x TODO).
 
-relu - 1 occurs often enough to prevent approach 0
+Derivative of the sigmoid function 456
+
+Compare the ReLU derivatives in figure 123 with the sigmoid derivatives in figure 456 and notice how ReLU has a wider selection
+of weights that result in non-zero derivatives. ReLU is therefore more likely to make progress during gradient descent
+and reach an optimal solution.
+
+
+
 
 bookmarked diagrams
 
-input enters the layer and multiplied by the weights. if result above threshold 1, else -1 / 0 (relu = 0)
-
 add other djlservice code samples meaning
-djl guide - add points
+
 final email points
+
+== Learn more
+
+* See the xref:tutorial/handwriting-recogniser-tutorial.adoc[] for a practical guide of operations.
+* See the xref:intro-component::api-spec.adoc[] for the full specification.
