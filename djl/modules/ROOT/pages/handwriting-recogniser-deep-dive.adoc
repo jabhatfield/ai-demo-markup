@@ -18,8 +18,10 @@ until one of the following occurs:
 
 == Multilayer perceptron
 
+image::mlp.png[MLP]
+
 Handwriting Recogniser implements a *multilayer perceptron* (*MLP*) neural network trained on the
-https://en.wikipedia.org/wiki/MNIST_database[MNIST database] of handwritten numbers. An MLP consists of multiple layers,
+https://en.wikipedia.org/wiki/MNIST_database[MNIST database,window=_blank] of handwritten numbers. An MLP consists of multiple layers,
 as illustrated in TODO figure x:
 
 * Input layer. Contains the input data
@@ -66,7 +68,7 @@ the network weights iteratively until the loss function is minimised. This is an
 in steps, in the direction of the steepest slope, until the lowest valley is reached. See figure X TODO for a
 visualisation of the process.
 
-diagram
+image::gradient-descent.png[Gradient descent]
 
 == ReLU activation function
 
@@ -78,12 +80,12 @@ in order to introduce variance and therefore learn; a linear function would simp
 uses the *Rectified Linear Unit* (*ReLU*) activation function, which returns output as equal to the input when the value
 is positive, otherwise it returns zero (see figure x TODO).
 
-graph: _/
+image::relu.png[ReLU]
 
 The activation function is also involved in the <<_backpropagation,backpropagation>> derivative calculations.
 Notice that the derivative of ReLU is 0 for negative values and 1 for positive values, as illustrated in figure x TODO.
 
-derivative graph 123
+image::relu-derivative.png[ReLU derivative]
 
 The derivative of the activation function is important for preventing the vanishing gradient problem, whereby the
 backpropagation derivatives prematurely approach 0 during <<_gradient_descent,gradient descent>>, causing the network
@@ -92,8 +94,10 @@ are close to 0 for many input values, such as the sigmoid function (see figure x
 
 Derivative of the sigmoid function 456
 
+image::sigmoid-derivative.png[Sigmoid derivative]
+
 Compare the ReLU derivatives in figure 123 with the sigmoid derivatives in figure 456 and notice how ReLU has a wider selection
-of weights that result in non-zero derivatives. ReLU is therefore more likely to make progress during gradient descent
+of weights that result in significant derivatives (close to 1). ReLU is therefore more likely to make progress during gradient descent
 and reach an optimal solution.
 
 == Softmax activation function
