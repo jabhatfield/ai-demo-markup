@@ -5,3 +5,4 @@
 ** xref:tutorial/list-example-input-images.adoc[]
 ** xref:tutorial/summary.adoc[]
 * xref:handwriting-recogniser-deep-dive.adoc[]
+* xref:handwriting-recogniser-faq.adoc[]

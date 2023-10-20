@@ -1,0 +1,38 @@
+= Handwriting Recogniser FAQ
+:navtitle: FAQ
+:icons: font
+
+== API
+
+[%collapsible]
+****
+.How do I call the API?
+[%collapsible]
+=====
+See the xref:intro-component::api-spec.adoc[].
+=====
+
+.What kind of operations are available?
+[%collapsible]
+=====
+Answer
+=====
+****
+
+== Inner workings
+
+[%collapsible]
+****
+.How does the Handwriting Recogniser work internally?
+[%collapsible]
+=====
+See the xref:intro-component::api-spec.adoc[].
+=====
+
+.What kind of operations are available?
+[%collapsible]
+=====
+Answer
+=====
+****
+
