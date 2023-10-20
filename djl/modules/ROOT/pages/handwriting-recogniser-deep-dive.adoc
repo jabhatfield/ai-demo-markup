@@ -1,6 +1,7 @@
 = Handwriting Recogniser deep dive
 :navtitle: Deep dive
 :icons: font
+:xrefstyle: short
 
 This deep dive outlines the main concepts of the Handwriting Recogniser inner workings.
 
@@ -8,7 +9,8 @@ This deep dive outlines the main concepts of the Handwriting Recogniser inner wo
 
 A neural network is an artificial representation of the human brain. It comprises computational nodes and
 their weighted interconnections, analogous to neurons and synapses. Input data flows though layers of nodes, with node output
-determined by incoming weights plus a mathematical function called an <<_relu_activation_function,activation function>>.
+determined by incoming weights plus a mathematical function called an
+<<_rectified_linear_unit_activation_function,activation function>>.
 
 Prior to user input, weights are randomly initialized and iteratively trained on training data, to refine the model,
 until one of the following occurs:
@@ -18,11 +20,13 @@ until one of the following occurs:
 
 == Multilayer perceptron
 
+.Multilayer perceptron
+[#mlp-diagram]
 image::mlp.png[MLP]
 
 Handwriting Recogniser implements a *multilayer perceptron* (*MLP*) neural network trained on the
 https://en.wikipedia.org/wiki/MNIST_database[MNIST database,window=_blank] of handwritten numbers. An MLP consists of multiple layers,
-as illustrated in TODO figure x:
+as illustrated in <<mlp-diagram>>:
 
 * Input layer. Contains the input data
 * Hidden layer. Calculates output to the next layer
@@ -36,7 +40,7 @@ The MLP has the following characteristics, which are explained in following sect
 * <<_feedforward_processing,Feedforward processing>>
 * <<_backpropagation,Backpropagation>>
 * <<_gradient_descent,Gradient descent>>
-* <<_relu_activation_function,Rectified Linear Unit activation function>>
+* <<_rectified_linear_unit_activation_function,Rectified Linear Unit activation function>>
 * <<_softmax_activation_function,Softmax activation function>>
 
 == Feedforward processing
@@ -65,48 +69,51 @@ Backpropagation only ascertains how to optimise the network, it does not perform
 
 Gradient descent is an algorithm that descends the gradient defined by <<_backpropagation,backpropagation>>. It amends
 the network weights iteratively until the loss function is minimised. This is analogous to descending a mountain peak,
-in steps, in the direction of the steepest slope, until the lowest valley is reached. See figure X TODO for a
-visualisation of the process.
+in steps, in the direction of the steepest slope, until the lowest valley is reached. See <<gradient-descent-diagram>>
+for a visualisation of the process.
 
+.Gradient descent
+[#gradient-descent-diagram]
 image::gradient-descent.png[Gradient descent]
 
-== ReLU activation function
-
-gradient of the loss function calculated by back p depends on the activation function.
+== Rectified Linear Unit activation function
 
 An activation function calculates node output based on the input. If the output exceeds a defined threshold, the node
 is activated and passes data onwards through its outward connections. Activation functions are typically non-linear
 in order to introduce variance and therefore learn; a linear function would simply propagate input. Handwriting Recogniser
 uses the *Rectified Linear Unit* (*ReLU*) activation function, which returns output as equal to the input when the value
-is positive, otherwise it returns zero (see figure x TODO).
+is positive, otherwise it returns zero (see <<relu-activation-diagram>>).
 
+.ReLU activation function
+[#relu-activation-diagram]
 image::relu.png[ReLU]
 
 The activation function is also involved in the <<_backpropagation,backpropagation>> derivative calculations.
-Notice that the derivative of ReLU is 0 for negative values and 1 for positive values, as illustrated in figure x TODO.
+Notice that the derivative of ReLU is 0 for negative values and 1 for positive values, as illustrated in
+<<relu-derivative-diagram>>.
 
+.ReLU derivative
+[#relu-derivative-diagram]
 image::relu-derivative.png[ReLU derivative]
 
 The derivative of the activation function is important for preventing the vanishing gradient problem, whereby the
 backpropagation derivatives prematurely approach 0 during <<_gradient_descent,gradient descent>>, causing the network
 to learn slowly or not at all. Vanishing gradients occur when implementing an activation function with derivatives that
-are close to 0 for many input values, such as the sigmoid function (see figure x TODO).
+are close to 0 for many input values, such as the sigmoid function (see <<sigmoid-derivative-diagram>>).
 
-Derivative of the sigmoid function 456
-
+.Sigmoid derivative
+[#sigmoid-derivative-diagram]
 image::sigmoid-derivative.png[Sigmoid derivative]
 
-Compare the ReLU derivatives in figure 123 with the sigmoid derivatives in figure 456 and notice how ReLU has a wider selection
-of weights that result in significant derivatives (close to 1). ReLU is therefore more likely to make progress during gradient descent
-and reach an optimal solution.
+Compare the ReLU derivatives in <<relu-derivative-diagram>> with the sigmoid derivatives in <<sigmoid-derivative-diagram>>.
+Notice how ReLU has a wider selection of weights that result in significant derivatives (close to 1). ReLU is therefore
+more likely to make progress during gradient descent and reach an optimal solution.
 
 == Softmax activation function
 
 The softmax function is used in the final layer of the network, instead of the
-<<_relu_activation_function,ReLU activation function>>, to output the result. It normalises the output values to
+<<_rectified_linear_unit_activation_function,ReLU activation function>>, to output the result. It normalises the output values to
 probabilities of correctness between 0 and 1. These probabilities sum up to 1 and can therefore be regarded as percentages.
-
-bookmarked diagrams
 
 == Learn more
 
