@@ -1,7 +1,33 @@
 = Zoo Chatbot deep dive
 :navtitle: Deep dive
 :icons: font
+:xrefstyle: short
 
 This deep dive outlines the main concepts of the Zoo Chatbot inner workings.
 
+== Natural Language Processing
+
+*Natural Language Processing* (*NLP*) is the leverage of computing to understand language. It involves a variety of
+linguistic datasets, or _corpora_, along with associated algorithms that process this data to form language models.
+Zoo Chatbot implements https://opennlp.apache.org[OpenNLP,window=_blank] to perform the following NLP tasks, which are
+explained in following sections:
+
+* <<_tokenization>>
+* <<_part_of_speech_tagging>>
+* <<_lemmatization>>
+* <<_categorisation>>
+
+== Tokenization
+
+== Part-of-speech tagging
+
+== Lemmatization
+
+== Categorisation
+
 inc bag of words - words as numbers
+
+== Learn more
+
+* See the xref:tutorial/chat-tutorial.adoc[] for a practical guide of operations.
+* See the xref:intro-component::api-spec.adoc[] for the full specification.
