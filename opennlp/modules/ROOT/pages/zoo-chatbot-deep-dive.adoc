@@ -40,6 +40,22 @@ TODO uses max ent
 
 == Categorisation
 
+== Maximum entropy
+
+The maximum entropy algorithm finds a probability distribution that maximises entropy, within constraints dictated by
+the data. Consider a dice roll as an analogy. A dice roll has high entropy, meaning that it's unpredictable, with a
+uniformly spread out probability distribution.
+
+image::regular-dice-green.png[]
+
+TODO
+
+image::unrealistic-weighted-dice-green.png[]
+
+TODO
+
+image::realistic-weighted-dice-green.png[]
+
 inc bag of words - words as numbers
 
 == Learn more
