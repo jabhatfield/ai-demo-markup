@@ -19,6 +19,21 @@ explained in following sections:
 
 == Tokenization
 
+Zoo Chatbot tokenizes a message into its constituent parts, such as words and punctuation marks, for subsequent
+<<_part_of_speech_tagging>>. Words are predominantly segmented by white space, with punctuation marks potentially attached
+in the case of abbreviations. Tokenization decisions are based on a maximum entropy algorithm, which operates on a
+pre-trained model of tokenization data.
+
+statistical model and Zoo Chatbot implements
+a maximum entropy
+
+pre-trained model of tokenization data
+
+, with the assistance of
+a pre-trained model.
+
+TODO uses max ent
+
 == Part-of-speech tagging
 
 == Lemmatization
