@@ -8,7 +8,7 @@ This deep dive outlines the main concepts of the Zoo Chatbot inner workings.
 == Natural Language Processing
 
 *Natural Language Processing* (*NLP*) is the leverage of computing to understand language. It involves a variety of
-linguistic datasets, or _corpora_, along with associated algorithms that process this data to form language models.
+linguistic datasets, or _corpora_, along with associated algorithms that transform this data into language models.
 Zoo Chatbot implements https://opennlp.apache.org[OpenNLP,window=_blank] to perform the following NLP tasks, which are
 explained in following sections:
 
@@ -40,23 +40,36 @@ TODO uses max ent
 
 == Categorisation
 
+inc bag of words - words as numbers
+
 == Maximum entropy
 
 The maximum entropy algorithm finds a probability distribution that maximises entropy, within constraints dictated by
 the data. Consider a dice roll as an analogy. A dice roll has high entropy, meaning that it's unpredictable, with a
-uniformly spread out probability distribution.
+uniformly spread out probability distribution (see <<regular-dice-diagram>>). Empirical training data will indicate
+this uniform distribution and therefore impose no real constraint, since the model already exhibits maximum entropy.
 
+.Regular dice with high entropy
+[#regular-dice-diagram]
 image::regular-dice-green.png[]
 
-TODO
+Suppose the dice is weighted in favour of rolling a 6. A naive algorithm might model the dice as always rolling a 6 and
+therefore indicate zero entropy (see <<unrealistic-weighted-dice-diagram>>). A lack of entropy results in failure to
+represent outliers; however, as illustrated in <<regular-dice-diagram>>, too much entropy results in a vague model of
+randomness. A realistic solution is somewhere between the two approaches.
 
+.Unrealistic weighted dice with zero entropy
+[#unrealistic-weighted-dice-diagram]
 image::unrealistic-weighted-dice-green.png[]
 
-TODO
+Consider the same weighted dice modelled with maximum entropy. The algorithm will maximise entropy by assigning importance
+to outliers (values 1-5). However, the outliers will be considered less significant than the more common value of 6 because
+the algorithm is constrained by the data, which favours a value of 6. The model is specific enough to show trends yet
+generic enough to include less common outcomes (see <<realistic-weighted-dice-diagram>>).
 
+.Realistic weighted dice with low entropy
+[#realistic-weighted-dice-diagram]
 image::realistic-weighted-dice-green.png[]
-
-inc bag of words - words as numbers
 
 == Learn more
 
