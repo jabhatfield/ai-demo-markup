@@ -21,22 +21,33 @@ explained in following sections:
 
 Zoo Chatbot tokenizes a message into its constituent parts, such as words and punctuation marks, for subsequent
 <<_part_of_speech_tagging>>. Words are predominantly segmented by white space, with punctuation marks potentially attached
-in the case of abbreviations. Tokenization decisions are based on a maximum entropy algorithm, which operates on a
-pre-trained model of tokenization data.
-
-statistical model and Zoo Chatbot implements
-a maximum entropy
-
-pre-trained model of tokenization data
-
-, with the assistance of
-a pre-trained model.
-
-TODO uses max ent
+in the case of abbreviations. Tokenization decisions are based on a pre-trained <<_maximum_entropy,maximum entropy>>
+model of tokenization data.
 
 == Part-of-speech tagging
 
+The <<_tokenization,tokens>> are tagged with
+https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html[Penn Treebank,window=_blank]
+part-of-speech labels to indicate word classes and punctuation marks. The choice of tag depends on the context in
+terms of surrounding tokens. Tagging decisions are based on a pre-trained <<_maximum_entropy,maximum entropy>> model
+of tag data.
+
 == Lemmatization
+
+The part-of-speech tags allow tokens to be lemmatized, meaning words are converted into their base form. This allows
+variants of the same word to be recognised. Lemmatization decisions are based on a pre-trained statistical model
+of lemmatization data. The training algorithm is based on a
+https://grzegorz.chrupala.me/papers/phd-single.pdf[PhD dissertation by Grzegorz Chrupala,window=_blank]
+and performs two main functions:
+
+* *Specialised suffixation:* many word inflections affect the suffix, for example _big_ can become _bigger_ or _biggest_.
+The lemma _big_ is formed by traversing from the end of the inflected word and performing a series of insertions
+and deletions.
+
+* *Generalised prefixation and suffixation:* word forms inapplicable to specialised suffixation are traversed from both
+the beginning and the end to find the longest common substring, or _stem_. For example, the Polish words for _hard_
+and _hardest_ are _trudny_ and _najtrudniejszy_ respectively, and they share the stem of _trudn_. The lemma _trudny_
+is formed through a series of insertions and deletions.
 
 == Categorisation
 
