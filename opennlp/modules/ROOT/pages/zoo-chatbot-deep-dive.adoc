@@ -15,7 +15,7 @@ explained in following sections:
 * <<_tokenization>>
 * <<_part_of_speech_tagging>>
 * <<_lemmatization>>
-* <<_categorisation>>
+* <<_chat>>
 
 == Tokenization
 
@@ -34,9 +34,9 @@ of tag data.
 
 == Lemmatization
 
-The part-of-speech tags allow tokens to be lemmatized, meaning words are converted into their base form. This allows
-variants of the same word to be recognised. Lemmatization decisions are based on a pre-trained statistical model
-of lemmatization data. The training algorithm is based on a
+The <<_part_of_speech_tagging,part-of-speech tags>> allow tokens to be lemmatized, meaning words are converted into their
+base form. This allows variants of the same word to be recognised. Lemmatization decisions are based on a pre-trained
+statistical model of lemmatization data. The training algorithm is based on a
 https://grzegorz.chrupala.me/papers/phd-single.pdf[PhD dissertation by Grzegorz Chrupala,window=_blank]
 and performs two main functions:
 
@@ -49,9 +49,42 @@ the beginning and the end to find the longest common substring, or _stem_. For e
 and _hardest_ are _trudny_ and _najtrudniejszy_ respectively, and they share the stem of _trudn_. The lemma _trudny_
 is formed through a series of insertions and deletions.
 
-== Categorisation
+== Chat
 
-inc bag of words - words as numbers
+The chatbot first implements the other techniques to prepare a message:
+
+1. <<_tokenization>>
+2. <<_part_of_speech_tagging>>
+3. <<_lemmatization>>
+
+The chatbot then trains a <<_maximum_entropy,maximum entropy>> model of
+xref:tutorial/list-lemmatized-classification-data.adoc[lemmatized classification data] in order to choose the most
+probable response.
+
+The training data must be converted from text into numerical values for the training algorithm to interpret it. The chatbot
+implements the bag-of-words model, which involves creating a set of unique words from the data and counting their occurrences.
+A category with relatively more occurrences of a word is more likely to be selected when that word is present in the input.
+See the following simplified example based on a small extract of the data:
+
+[source,text]
+.Extract of lemmatized classification data
+----
+opening-times what time do you open
+opening-times what be your open time
+opening-times what be your open hour
+----
+
+[source,text]
+.Bag-of-words represented as an array of strings
+----
+["bow=be", "bow=do", "bow=hour", "bow=open", "bow=time", "bow=what", "bow=you", "bow=your"]
+----
+
+[source,text]
+.Word count represented as an array of integers
+----
+[2, 1, 1, 3, 2, 3, 1, 2]
+----
 
 == Maximum entropy
 

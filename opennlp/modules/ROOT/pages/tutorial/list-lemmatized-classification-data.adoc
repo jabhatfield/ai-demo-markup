@@ -6,7 +6,7 @@ chat phrases that a user could potentially type, along with their associated rep
 Note the following two advantages of lemmatizing the training data:
 
 * The input message data is xref:tutorial/lemmatize.adoc[also lemmatized] and therefore aligns more closely
-when calculating a match
+when calculating a match.
 * Less training data is required because fewer variants of words are required: variants converge onto their lemma.
 
 == Request
