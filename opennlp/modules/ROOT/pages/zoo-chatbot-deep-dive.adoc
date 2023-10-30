@@ -100,7 +100,7 @@ image::regular-dice-green.png[]
 Suppose the dice is weighted in favour of rolling a 6. A naive algorithm might model the dice as always rolling a 6 and
 therefore indicate zero entropy (see <<unrealistic-weighted-dice-diagram>>). A lack of entropy results in failure to
 represent outliers; however, as illustrated in <<regular-dice-diagram>>, too much entropy results in a vague model of
-randomness. A realistic solution is somewhere between the two approaches.
+randomness. A realistic weighted dice is somewhere between the two probability distributions.
 
 .Unrealistic weighted dice with zero entropy
 [#unrealistic-weighted-dice-diagram]
