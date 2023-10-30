@@ -2,20 +2,49 @@
 :navtitle: FAQ
 :icons: font
 
+== Getting started
+
+[%collapsible]
+****
+.How do I run Handwriting Recogniser?
+[%collapsible]
+=====
+See the xref:intro-component::install-and-run-quickstart.adoc[].
+=====
+
+.Are there any prerequisites?
+[%collapsible]
+=====
+See xref:intro-component::install-and-run-quickstart.adoc#_prerequisites[Install and run quickstart > Prerequisites].
+=====
+
+.How do I learn about image recognition?
+[%collapsible]
+=====
+See the xref:handwriting-recogniser-deep-dive.adoc[].
+=====
+****
+
 == API
 
 [%collapsible]
 ****
-.How do I call the API?
+.How do I learn the API?
+[%collapsible]
+=====
+See the xref:tutorial/handwriting-recogniser-tutorial.adoc[].
+=====
+
+.Where is the full API specification?
 [%collapsible]
 =====
 See the xref:intro-component::api-spec.adoc[].
 =====
 
-.What kind of operations are available?
+.Can I classify my own image?
 [%collapsible]
 =====
-Answer
+Yes. See xref:tutorial/classify-handwritten-number.adoc#_custom_request[Classify a handwritten number > Custom request].
 =====
 ****
 
@@ -23,16 +52,23 @@ Answer
 
 [%collapsible]
 ****
-.How does the Handwriting Recogniser work internally?
+.Which language is Handwriting Recogniser written in?
 [%collapsible]
 =====
-See the xref:intro-component::api-spec.adoc[].
+Handwriting Recogniser is written in Java and implements the
+https://spring.io/projects/spring-boot[Spring Boot,window=_blank] framework.
 =====
 
-.What kind of operations are available?
+.How does Handwriting Recogniser work internally?
 [%collapsible]
 =====
-Answer
+See the xref:handwriting-recogniser-deep-dive.adoc[].
+=====
+
+.What kind of data is Handwriting Recogniser based on?
+[%collapsible]
+=====
+Handwriting Recogniser is trained on the
+https://en.wikipedia.org/wiki/MNIST_database[MNIST database of handwritten digits,window=_blank].
 =====
 ****
-
