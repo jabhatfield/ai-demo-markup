@@ -8,3 +8,4 @@
 ** xref:tutorial/list-lemmatized-classification-data.adoc[]
 ** xref:tutorial/summary.adoc[]
 * xref:zoo-chatbot-deep-dive.adoc[]
+* xref:zoo-chatbot-faq.adoc[]

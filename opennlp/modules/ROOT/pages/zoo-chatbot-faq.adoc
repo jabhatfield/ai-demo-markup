@@ -1,0 +1,76 @@
+= Zoo Chatbot FAQ
+:navtitle: FAQ
+:icons: font
+
+== Getting started
+
+[%collapsible]
+****
+.How do I run Zoo Chatbot?
+[%collapsible]
+=====
+See the xref:intro-component::install-and-run-quickstart.adoc[].
+=====
+
+.Are there any prerequisites?
+[%collapsible]
+=====
+See xref:intro-component::install-and-run-quickstart.adoc#_prerequisites[Install and run quickstart > Prerequisites].
+=====
+
+.How do I learn about natural language processing?
+[%collapsible]
+=====
+See the xref:zoo-chatbot-deep-dive.adoc[].
+=====
+****
+
+== API
+
+[%collapsible]
+****
+.How do I learn the API?
+[%collapsible]
+=====
+See the xref:tutorial/chat-tutorial.adoc[]
+=====
+
+.Where is the full API specification?
+[%collapsible]
+=====
+See the xref:intro-component::api-spec.adoc[].
+=====
+
+.What can I ask the chatbot?
+[%collapsible]
+=====
+Ask the chatbot anything. However, note that responses are limited in number and the most relevant response will be returned.
+See xref:intro-component::install-and-run-quickstart.adoc#_send_a_chat_message[Install and run quickstart > Send a chat message]
+for an example request.
+=====
+****
+
+== Inner workings
+
+[%collapsible]
+****
+.Which language is Zoo Chatbot written in?
+[%collapsible]
+=====
+Zoo Chatbot is written in Java and implements the
+https://spring.io/projects/spring-boot[Spring Boot,window=_blank] framework.
+=====
+
+.How does Zoo Chatbot work internally?
+[%collapsible]
+=====
+See the xref:zoo-chatbot-deep-dive.adoc[].
+=====
+
+.What kind of data is Zoo Chatbot based on?
+[%collapsible]
+=====
+Handwriting Recogniser is based on a combination of raw data and pre-trained models. See the xref:zoo-chatbot-deep-dive.adoc[]
+for more details.
+=====
+****
