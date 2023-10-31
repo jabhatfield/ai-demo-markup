@@ -8,16 +8,17 @@ image::brain.jpg[Brain neural network]
 
 == Introduction
 
-*RESTful AI Demo* (*RAID*) is a simple set of APIs for learning *Machine Learning* (*ML*) and
-*Deep Learning* (*DL*). It is written in Java Spring Boot and consists of two components:
+*RESTful AI Demo* (*RAID*) is a simple set of APIs for learning *machine learning* (*ML*) and
+*deep learning* (*DL*). It is written in Java Spring Boot and consists of two components:
 
-* xref:zoo-chatbot-component::zoo-chatbot-intro.adoc[ML chatbot] for enquires about a zoo, based on https://opennlp.apache.org[Apache OpenNLP,window=_blank]
-*Natural Language Processing* (*NLP*)
-* xref:handwriting-recogniser-component::handwriting-recogniser-intro.adoc[DL image recognition] of handwriting, based on https://djl.ai[Deep Java Library,window=_blank] (*DJL*)
+* xref:zoo-chatbot-component::zoo-chatbot-intro.adoc[Zoo Chatbot](ML): enquires about a zoo, based on
+https://opennlp.apache.org[Apache OpenNLP,window=_blank] *natural language processing* (*NLP*).
+* xref:handwriting-recogniser-component::handwriting-recogniser-intro.adoc[Handwriting Recogniser](DL): recognition of
+handwritten digits, based on https://djl.ai[Deep Java Library,window=_blank] (*DJL*) image recognition.
 
-Use the controls in the bottom left corner of the screen to switch between documentation for each component.
+include::partial$navigation-instructions.adoc[]
 
-== Definitions of Machine Learning and Deep Learning
+== Definitions of machine learning and deep learning
 
 ML is a subset of AI and DL is a subset of ML:
 
@@ -29,7 +30,7 @@ image::ai-ml-dl.png[AI vs ML vs DL]
 * Typically involves providing an algorithm with example input and corresponding output data, then letting the
 algorithm run iteratively to learn the nature of these mappings
 * Iteratively adjusts its parameters and compares its calculated output, derived from the input, to the defined output
-* Once the model is _trained_ in this manner it can predict the classification of relevant input
+* Once the model is trained in this manner it can predict the classification of relevant input
 
 === Deep Learning
 
@@ -38,12 +39,7 @@ algorithm run iteratively to learn the nature of these mappings
 * The data and relationships of data are stored as nodes and weighted vectors
 * Powerful enough to learn on its own, without provision of example output
 
-For more detailed definitions, see this
-https://www.advancinganalytics.co.uk/blog/2021/12/15/understanding-the-difference-between-ai-ml-and-dl-using-an-incredibly-simple-example[example of a fruit classifying factory,window=_blank].
+For a deeper understanding of the inner workings of ML and DL, see these deep dives:
 
-For a deeper understanding of the inner workings of DL and ML, see these tutorials:
-
-include::partial$tip.adoc[]
-
-* a TODO
-* b TODO
+* xref:zoo-chatbot-component::zoo-chatbot-deep-dive.adoc[]
+* xref:handwriting-recogniser-component::handwriting-recogniser-deep-dive.adoc[]

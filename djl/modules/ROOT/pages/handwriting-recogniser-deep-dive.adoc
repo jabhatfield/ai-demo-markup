@@ -15,8 +15,8 @@ determined by incoming weights plus a mathematical function called an
 Prior to user input, weights are randomly initialized and iteratively trained on training data, to refine the model,
 until one of the following occurs:
 
-* The training algorithm converges, meaning it reaches a stable value
-* The specified number of iterations is reached
+* The training algorithm converges, meaning it reaches a stable value.
+* The specified number of iterations is reached.
 
 == Multilayer perceptron
 
@@ -28,9 +28,9 @@ Handwriting Recogniser implements a *multilayer perceptron* (*MLP*) neural netwo
 https://en.wikipedia.org/wiki/MNIST_database[MNIST database,window=_blank] of handwritten numbers. An MLP consists of multiple layers,
 as illustrated in <<mlp-diagram>>:
 
-* Input layer. Contains the input data
-* Hidden layer. Calculates output to the next layer
-* Output layer. Calculates the result
+* *Input layer*: contains the input data
+* *Hidden layer*: calculates output to the next layer
+* *Output layer*: calculates the result
 
 The hidden layer is the core of the network. It contains the functions that activate nodes and recalculate weights.
 The network can have multiple hidden layers, depending on the complexity of its functionality.

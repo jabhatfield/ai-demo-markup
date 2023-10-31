@@ -8,25 +8,16 @@ image::zoo.jpg[Tiger resting at the zoo]
 
 == Introduction
 
-Zoo Chatbot uses https://opennlp.apache.org[OpenNLP,window=_blank] to train a set of question patterns about a zoo and
+Zoo Chatbot implements https://opennlp.apache.org[OpenNLP,window=_blank] to train a set of question patterns about a zoo and
 match them to 1 of 5 answers. It can then generate the probabilities of each answer being correct.
 
-The API is composed of the following:
+== Get started
 
-* POST request to classify a single word TODO check
-* POST request to tokenize a sentence
-* POST request to tag tokens with parts-of-speech
-* POST request to lemmatize tokens tagged with parts-of-speech
-* POST request to chat by sending a sentence
-* GET request to retrieve possible chat responses
-* GET request to retrieve the lemmatized training data
+See one or more of the following ways to get started, depending on preference of learning approach:
 
-== Classify a single word TODO check
+* Perform the xref:intro-component::install-and-run-quickstart.adoc[] to run Zoo Chatbot.
+* Complete the xref:tutorial/chat-tutorial.adoc[] to gain practical experience of the API.
+* Read the xref:zoo-chatbot-deep-dive.adoc[] to gain a deeper theoretical understanding.
+* See the xref:intro-component::api-spec.adoc[] for fine details of the API.
 
-ai-demo readme - update to point at docs
-
-xrefs tut <-> openapi <-> quickstart
-
-deep dive inc
-pre-t bins, ml training, dl training
-& link to Penn Treebank
+include::intro-component::partial$navigation-instructions.adoc[]

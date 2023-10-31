@@ -8,15 +8,16 @@ image::handwriting.jpg[Handwriting]
 
 == Introduction
 
-Handwriting Recogniser uses http://djl.ai[DJL,window=_blank] to train a neural network on images of handwritten numbers
+Handwriting Recogniser implements http://djl.ai[DJL,window=_blank] to train a neural network on images of handwritten numbers
 within the range of 0 - 9. It can then generate the probabilities of an input image matching each of these numbers.
 
-The API is composed of the following:
+== Get started
 
-* POST request to classify a handwritten zero
-* POST request to classify any given image of a handwritten number
-* GET request to retrieve available images
+See one or more of the following ways to get started, depending on preference of learning approach:
 
-== Classify a handwritten zero
+* Perform the xref:intro-component::install-and-run-quickstart.adoc[] to run Handwriting Recogniser.
+* Complete the xref:tutorial/handwriting-recogniser-tutorial.adoc[] to gain practical experience of the API.
+* Read the xref:handwriting-recogniser-deep-dive.adoc[] to gain a deeper theoretical understanding of the chatbot.
+* See the xref:intro-component::api-spec.adoc[] for fine details of the API.
 
-TODO swagger & 3-that-looks-like-8.png doc and explain it
+include::intro-component::partial$navigation-instructions.adoc[]

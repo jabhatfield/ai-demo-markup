@@ -70,7 +70,7 @@ See the xref:zoo-chatbot-deep-dive.adoc[].
 .What kind of data is Zoo Chatbot based on?
 [%collapsible]
 =====
-Handwriting Recogniser is based on a combination of raw data and pre-trained models. See the xref:zoo-chatbot-deep-dive.adoc[]
+Zoo Chatbot is based on a combination of raw data and pre-trained models. See the xref:zoo-chatbot-deep-dive.adoc[]
 for more details.
 =====
 ****

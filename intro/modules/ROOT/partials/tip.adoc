@@ -1,5 +1,0 @@
-[TIP]
-====
-Perform the quickstart(link) and become familiar with the rest of the documentation
-before embarking on these tutorials. TODO change - tip to do tutorial(s) before deep dive(s)
-====
