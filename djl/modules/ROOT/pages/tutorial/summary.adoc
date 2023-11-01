@@ -1,5 +1,5 @@
 = Summary
 
 Congratulations! You have learnt to use the set of Handwriting Recogniser API operations and have a basic understanding of them.
-See the xref:intro-component::api-spec.adoc[] for more details and the TODO link deep dive for a deeper understanding of
-the Handwriting Recogniser inner workings.
+See the xref:intro-component::api-spec.adoc[] for more details and the xref:handwriting-recogniser-deep-dive.adoc[deep dive]
+for a deeper understanding of the Handwriting Recogniser inner workings.

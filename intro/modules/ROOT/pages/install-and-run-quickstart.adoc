@@ -106,4 +106,7 @@ include::handwriting-recogniser-component::example$handwritten-zero-response.jso
 
 == Learn more
 
-TODO link tutorials, link deep dives, link full spec
+* See the xref:zoo-chatbot-component::tutorial/chat-tutorial.adoc[] to learn all the Zoo Chatbot operations.
+* See the xref:handwriting-recogniser-component::tutorial/handwriting-recogniser-tutorial.adoc[] to learn all the
+Handwriting Recogniser operations.
+* See the xref:api-spec.adoc[] for the full specification.
