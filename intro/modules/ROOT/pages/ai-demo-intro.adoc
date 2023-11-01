@@ -25,14 +25,14 @@ ML is a subset of AI and DL is a subset of ML:
 .AI vs. ML vs. DL
 image::ai-ml-dl.png[AI vs ML vs DL]
 
-=== Machine Learning
+=== Machine learning
 
 * Typically involves providing an algorithm with example input and corresponding output data, then letting the
 algorithm run iteratively to learn the nature of these mappings
 * Iteratively adjusts its parameters and compares its calculated output, derived from the input, to the defined output
 * Once the model is trained in this manner it can predict the classification of relevant input
 
-=== Deep Learning
+=== Deep learning
 
 * Similar to ML in that it also learns through an iterative algorithm
 * Typically uses much more input data and stores its calculations in a neural network structure
