@@ -3,3 +3,7 @@
 Congratulations! You have learnt to use the set of Zoo Chatbot API operations and have a basic understanding of them.
 See the xref:intro-component::api-spec.adoc[] for more details and the xref:zoo-chatbot-deep-dive.adoc[deep dive] for a
 deeper understanding of the Zoo Chatbot inner workings.
+
+++++
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5DnENDq1Up7IP7BLCvT_8GYR65jWFqukixZiRGn-U9Rl7lQ/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+++++
