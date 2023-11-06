@@ -89,7 +89,7 @@ opening-times what be your open hour
 == Maximum entropy
 
 The maximum entropy algorithm finds a probability distribution that maximises entropy, within constraints dictated by
-the data. Consider a dice roll as an analogy. A dice roll has high entropy, meaning that it's unpredictable, with a
+the data. Consider a dice roll as an example. A dice roll has high entropy, meaning that it's unpredictable, with a
 uniformly spread out probability distribution (see <<regular-dice-diagram>>). Empirical training data will indicate
 this uniform distribution and therefore impose no real constraint, since the model already exhibits maximum entropy.
 
@@ -114,6 +114,10 @@ generic enough to include less common outcomes (see <<realistic-weighted-dice-di
 .Realistic weighted dice with low entropy
 [#realistic-weighted-dice-diagram]
 image::realistic-weighted-dice-green.png[]
+
+The Zoo Chatbot resembles this weighted dice example, except the algorithm is constrained by the mapping of input data
+to output data during training, as opposed to a favoured side of a dice. The maximum entropy algorithm favours output
+based on the mappings whilst maximising the probabilities of less likely outputs.
 
 == Learn more
 

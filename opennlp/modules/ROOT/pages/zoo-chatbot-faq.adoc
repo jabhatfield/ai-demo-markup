@@ -32,7 +32,7 @@ See the xref:zoo-chatbot-deep-dive.adoc[].
 .How do I learn the API?
 [%collapsible]
 =====
-See the xref:tutorial/chat-tutorial.adoc[]
+See the xref:tutorial/chat-tutorial.adoc[].
 =====
 
 .Where is the full API specification?

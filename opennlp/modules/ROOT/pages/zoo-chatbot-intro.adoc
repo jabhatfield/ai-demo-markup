@@ -9,7 +9,7 @@ image::zoo.jpg[Tiger resting at the zoo]
 == Introduction
 
 Zoo Chatbot implements https://opennlp.apache.org[OpenNLP,window=_blank] to train a set of question patterns about a zoo and
-match them to 1 of 5 answers. It can then generate the probabilities of each answer being correct.
+match them to one of five answers. It can then generate the probabilities of each answer being correct.
 
 == Get started
 

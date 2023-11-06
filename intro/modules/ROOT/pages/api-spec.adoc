@@ -23,9 +23,9 @@ The Swagger specification includes examples that can be run within the Swagger U
 
 The Swagger specification includes the following error information:
 
-1. The structure of the JSON error response, which is standardized across all endpoints
-2. An example HTTP 400 response for each endpoint, where applicable due to the presence of input data
-3. An example HTTP 500 response for each endpoint
+* The structure of the JSON error response, which is standardized across all endpoints
+* An example HTTP 400 response for each endpoint, where applicable due to the presence of input data
+* An example HTTP 500 response for each endpoint
 
 See the table below for a full list of possible errors:
 
