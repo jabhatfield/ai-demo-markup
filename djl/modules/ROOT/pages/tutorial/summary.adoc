@@ -3,3 +3,8 @@
 Congratulations! You have learnt to use the set of Handwriting Recogniser API operations and have a basic understanding of them.
 See the xref:intro-component::api-spec.adoc[] for more details and the xref:handwriting-recogniser-deep-dive.adoc[deep dive]
 for a deeper understanding of the Handwriting Recogniser inner workings.
+
+++++
+<br>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScCDlOShH-M7wmT2t4zQqTZguMq7ZjhbnZl-znZITTdkmKeXA/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+++++

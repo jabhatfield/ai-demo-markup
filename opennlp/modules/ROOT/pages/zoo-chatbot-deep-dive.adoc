@@ -119,3 +119,8 @@ image::realistic-weighted-dice-green.png[]
 
 * See the xref:tutorial/chat-tutorial.adoc[] for a practical guide of operations.
 * See the xref:intro-component::api-spec.adoc[] for the full specification.
+
+++++
+<br>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlDeF1NdqBdvpPadDKhSWvD4kyhiA2rS66Ll5zcCfENTlVjw/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+++++

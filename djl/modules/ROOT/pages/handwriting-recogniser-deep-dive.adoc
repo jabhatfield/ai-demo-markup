@@ -119,3 +119,8 @@ probabilities of correctness between 0 and 1. These probabilities sum up to 1 an
 
 * See the xref:tutorial/handwriting-recogniser-tutorial.adoc[] for a practical guide of operations.
 * See the xref:intro-component::api-spec.adoc[] for the full specification.
+
+++++
+<br>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScIxAyBeGBwbXKVOrEnTPNrAJJ5uLqP9Y2h74wBK5T7z11wrw/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+++++
