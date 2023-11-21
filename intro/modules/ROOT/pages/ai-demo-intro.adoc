@@ -23,7 +23,7 @@ include::partial$navigation-instructions.adoc[]
 ML is a subset of AI and DL is a subset of ML:
 
 .AI vs. ML vs. DL
-image::ai-ml-dl.png[AI vs ML vs DL]
+image::ai-ml-dl-green.png[AI vs ML vs DL]
 
 === Machine learning
 
