@@ -11,9 +11,9 @@ image::brain.jpg[Brain neural network]
 *RESTful AI Demo* (*RAID*) is a simple set of APIs for learning *machine learning* (*ML*) and
 *deep learning* (*DL*). It is written in Java Spring Boot and consists of two components:
 
-* xref:zoo-chatbot-component::zoo-chatbot-intro.adoc[Zoo Chatbot](ML): enquires about a zoo, based on
+* xref:zoo-chatbot-component::zoo-chatbot-intro.adoc[Zoo Chatbot] (ML): enquires about a zoo, based on
 https://opennlp.apache.org[Apache OpenNLP,window=_blank] *natural language processing* (*NLP*).
-* xref:handwriting-recogniser-component::handwriting-recogniser-intro.adoc[Handwriting Recogniser](DL): recognition of
+* xref:handwriting-recogniser-component::handwriting-recogniser-intro.adoc[Handwriting Recogniser] (DL): recognition of
 handwritten digits, based on https://djl.ai[Deep Java Library,window=_blank] (*DJL*) image recognition.
 
 include::partial$navigation-instructions.adoc[]
