@@ -43,12 +43,12 @@ See the table below for a full list of possible errors:
 |400 Bad Request
 |Array 'tokens' must be populated
 |image:green-tick.svg["Green tick",20]
-|image:red-cross.svg["Green tick",20]
+|image:red-cross.svg["Red cross",20]
 
 |003_MISSING_IMAGE_FILE
 |500 Internal Server Error
 |Image file '10.png' not found. Check the src/main/resources folder
-|image:red-cross.svg["Green tick",20]
+|image:red-cross.svg["Red cross",20]
 |image:green-tick.svg["Green tick",20]
 
 |100_UNKNOWN_ERROR
