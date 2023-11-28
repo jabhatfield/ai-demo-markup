@@ -8,7 +8,7 @@ https://swagger.io/specification/[OpenAPI Specification,window=_blank].
 Perform the following steps to view the API via the Swagger UI:
 
 1. Run the application locally by following the xref::install-and-run-quickstart.adoc[].
-2. Go to http://localhost:8080/swagger-ui/index.html.
+2. Go to http://localhost:8080/swagger-ui/index.html[,window=_blank].
 
 === Run examples
 
