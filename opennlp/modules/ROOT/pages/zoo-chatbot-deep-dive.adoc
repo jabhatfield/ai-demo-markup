@@ -20,9 +20,9 @@ explained in following sections:
 == Tokenization
 
 Zoo Chatbot tokenizes a message into its constituent parts, such as words and punctuation marks, for subsequent
-<<_part_of_speech_tagging>>. Words are predominantly segmented by white space, with punctuation marks potentially attached
-in the case of abbreviations. Tokenization decisions are based on a pre-trained <<_maximum_entropy,maximum entropy>>
-model of tokenization data.
+<<_part_of_speech_tagging,part-of-speech tagging>>. Words are predominantly segmented by white space, with punctuation
+marks potentially attached in the case of abbreviations. Tokenization decisions are based on a pre-trained
+<<_maximum_entropy,maximum entropy>> model of tokenization data.
 
 == Part-of-speech tagging
 
