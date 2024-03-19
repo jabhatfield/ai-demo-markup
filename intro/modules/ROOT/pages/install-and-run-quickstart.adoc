@@ -14,7 +14,7 @@ https://sdkman.io[SDKMAN!,window=_blank] is recommended
 
 == Build
 
-Clone the code from https://github.com/jon-hatfield-tech-writing/ai-demo[GitHub,window=_blank] then use an IDE or the command
+Clone the code from https://github.com/jabhatfield/ai-demo[GitHub,window=_blank] then use an IDE or the command
 line to continue.
 
 === Build with an IDE
