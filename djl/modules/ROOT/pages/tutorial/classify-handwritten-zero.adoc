@@ -1,7 +1,7 @@
 = Classify a handwritten zero
 
 This endpoint classifies an image of a handwritten zero
-image:https://github.com/jon-hatfield-tech-writing/ai-demo/blob/main/src/main/resources/images/0.png?raw=true[0,20,20]
+image:https://github.com/jabhatfield/ai-demo/blob/main/src/main/resources/images/0.png?raw=true[0,20,20]
 that has been provided by http://djl.ai[DJL,window=_blank]. A neural network trained on the
 https://en.wikipedia.org/wiki/MNIST_database[MNIST database of handwritten digits,window=_blank] performs the classification.
 
